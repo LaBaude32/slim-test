@@ -6,7 +6,7 @@ use Slim\App;
 use Slim\Factory\AppFactory;
 
 return [
-    //TODO; Ã§a fait quoi Ã§a ?
+    //TODO; ça fait quoi ça ?
     Configuration::class => function () {
         return new Configuration(require __DIR__ . '/settings.php');
     },
@@ -36,4 +36,4 @@ return [
         return new PDO($dsn, $username, $password, $flags);
     },
 ];
-//TODO: pas trop crompris la problÃ©matique du conteneur
+//TODO: pas trop crompris la problématique du conteneur

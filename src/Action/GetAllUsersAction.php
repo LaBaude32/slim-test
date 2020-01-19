@@ -18,7 +18,6 @@ class GetAllUsersAction
     public function __invoke(ServerRequest $request, Response $response)
     {
         $users = $this->usersAllGetter->GetAllUsers();
-
         return $response->withJson($users)->withStatus(201);
     }
 }

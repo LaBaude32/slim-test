@@ -8,6 +8,6 @@ use Slim\Http\ServerRequest;
 return function (App $app) {
     $app->get('/', \App\Action\HomeAction::class);
     $app->post('/users', \App\Action\UserCreateAction::class);
-    $app->get('/getallusers', \App\Action\UserCreateAction::class);
+    $app->get('/getallusers', \App\Action\GetAllUsersAction::class);
 
 };

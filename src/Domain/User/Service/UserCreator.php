@@ -36,7 +36,7 @@ final class UserCreator
     public function createUser(UserCreateData $user): int
     {
         // Validation
-        var_dump($user);
+        // var_dump($user);
         if (empty($user->username)) {
             throw new UnexpectedValueException('Username required');
         }

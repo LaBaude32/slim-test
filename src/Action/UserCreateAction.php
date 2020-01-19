@@ -20,7 +20,7 @@ final class UserCreateAction
     {
         // Collect input from the HTTP request
         $data = (array) $request->getParsedBody();
-        echo '<pre>'; var_dump($data);
+
         // Mapping (should be done in a mapper class)
         $user = new UserCreateData();
         $user->username = $data['username'];
