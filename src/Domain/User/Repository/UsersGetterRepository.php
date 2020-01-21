@@ -5,7 +5,6 @@ namespace App\Domain\User\Repository;
 use App\Domain\User\Data\UserData;
 use PDO;
 
-
 class UsersGetterRepository
 {
     protected $connection;

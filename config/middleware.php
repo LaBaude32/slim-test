@@ -19,4 +19,6 @@ return function (App $app) {
     $logErrorDetails = (bool) $settings['log_error_details'];
 
     $app->addErrorMiddleware($displayErrorDetails, $logErrors, $logErrorDetails);
+    // $app->add(new TestMiddle());
+    //TODO: comment on ajoute un middleware ?
 };
