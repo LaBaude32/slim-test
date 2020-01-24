@@ -20,6 +20,6 @@ $app = $container->get(App::class);
 (require __DIR__ . '/routes.php')($app);
 
 // Register middleware
-(require __DIR__ . '/middleware.php')($app); //TODO: à quoi sert le ($app) ? On peu require un fichier en lui passant une variable ?
+(require __DIR__ . '/middleware.php')($app);
 
 return $app;

@@ -1,9 +1,12 @@
 <?php
 
-use Selective\Config\Configuration;
 use Slim\App;
+use Selective\Config\Configuration;
+use App\Middleware\TestMiddle as TestMiddle;
+
 
 return function (App $app) {
+
     // Parse json, form data and xml
     $app->addBodyParsingMiddleware();
 
@@ -19,6 +22,8 @@ return function (App $app) {
     $logErrorDetails = (bool) $settings['log_error_details'];
 
     $app->addErrorMiddleware($displayErrorDetails, $logErrors, $logErrorDetails);
-    // $app->add(new TestMiddle());
+
+    $app->add(new TestMiddle());
+
     //TODO: comment on ajoute un middleware ?
 };
