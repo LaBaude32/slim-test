@@ -26,4 +26,10 @@ final class UsersGetter
         $allUsers = $this->repository->getAllUsers();
         return $allUsers;
     }
+
+    public function GetUserById(int $userId)
+    {
+        $user = $this->repository->getUserById($userId);
+        return $user;
+    }
 }
